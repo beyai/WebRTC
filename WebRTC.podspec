@@ -14,6 +14,4 @@ Pod::Spec.new do |s|
   }
   s.vendored_frameworks = 'WebRTC.xcframework'
 
-  # 下载后自动解压
-  s.prepare_command = 'unzip -q WebRTC.xcframework.zip'
 end
