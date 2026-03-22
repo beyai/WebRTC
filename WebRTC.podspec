@@ -7,11 +7,6 @@ Pod::Spec.new do |s|
   s.authors          = { 'Google' => 'webrtc@google.com' }
 
   s.platform         = :ios, '15.0'
-  # 从线上 URL 下载，而不是本地路径
-  s.source           = { 
-    :http => 'https://github.com/shiguredo-webrtc-build/webrtc-build/releases/download/m146.7680.3.1/WebRTC.xcframework.zip',
-    :sha256 => 'a1da8db1d12287cd71d4d1783569bf95f5fc03864fde889ea8cb1f6ad3d77b24'  # 可选，用于验证完整性
-  }
+  s.source           = { :path => '.' }
   s.vendored_frameworks = 'WebRTC.xcframework'
-
 end
